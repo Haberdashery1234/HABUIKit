@@ -1,0 +1,890 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0374D8A93009DC7E00658327 /* HABFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 0374D8A83009DC7E00658327 /* HABFoundation */; };
+		0374D8AB3009DC7E00658327 /* HABSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0374D8AA3009DC7E00658327 /* HABSwiftUI */; };
+		0374D8AD3009DC7E00658327 /* HABUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0374D8AC3009DC7E00658327 /* HABUIKit */; };
+		0374D8DE3009DE6100658327 /* HABBadgeDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8BA3009DE6100658327 /* HABBadgeDemoViewController.swift */; };
+		0374D8DF3009DE6100658327 /* HABEmptyStateDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8C03009DE6100658327 /* HABEmptyStateDemoViewController.swift */; };
+		0374D8E03009DE6100658327 /* ComponentDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8CE3009DE6100658327 /* ComponentDemoViewController.swift */; };
+		0374D8E13009DE6100658327 /* HABTextViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8C73009DE6100658327 /* HABTextViewDemoViewController.swift */; };
+		0374D8E23009DE6100658327 /* FoundationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8C43009DE6100658327 /* FoundationViewController.swift */; };
+		0374D8E33009DE6100658327 /* HABToggleDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8CB3009DE6100658327 /* HABToggleDemoViewController.swift */; };
+		0374D8E43009DE6100658327 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8DB3009DE6100658327 /* ViewController.swift */; };
+		0374D8E53009DE6100658327 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8BE3009DE6100658327 /* FeedbackViewController.swift */; };
+		0374D8E63009DE6100658327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8D23009DE6100658327 /* AppDelegate.swift */; };
+		0374D8E73009DE6100658327 /* HABTagDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8BC3009DE6100658327 /* HABTagDemoViewController.swift */; };
+		0374D8E83009DE6100658327 /* HABLabelDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8BB3009DE6100658327 /* HABLabelDemoViewController.swift */; };
+		0374D8E93009DE6100658327 /* HABLoadingViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8C13009DE6100658327 /* HABLoadingViewDemoViewController.swift */; };
+		0374D8EA3009DE6100658327 /* ContainersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8B43009DE6100658327 /* ContainersViewController.swift */; };
+		0374D8EB3009DE6100658327 /* InputsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8C83009DE6100658327 /* InputsViewController.swift */; };
+		0374D8EC3009DE6100658327 /* HABSegmentedControlDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8CA3009DE6100658327 /* HABSegmentedControlDemoViewController.swift */; };
+		0374D8ED3009DE6100658327 /* HABDividerDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8B63009DE6100658327 /* HABDividerDemoViewController.swift */; };
+		0374D8EE3009DE6100658327 /* HABTextFieldDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8C63009DE6100658327 /* HABTextFieldDemoViewController.swift */; };
+		0374D8EF3009DE6100658327 /* HABBannerDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8BF3009DE6100658327 /* HABBannerDemoViewController.swift */; };
+		0374D8F03009DE6100658327 /* ButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8AE3009DE6100658327 /* ButtonsViewController.swift */; };
+		0374D8F13009DE6100658327 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8B13009DE6100658327 /* CatalogViewController.swift */; };
+		0374D8F23009DE6100658327 /* PlaceholderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8CF3009DE6100658327 /* PlaceholderViewController.swift */; };
+		0374D8F33009DE6100658327 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8B83009DE6100658327 /* DisplayViewController.swift */; };
+		0374D8F43009DE6100658327 /* SampleNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8D93009DE6100658327 /* SampleNavigationController.swift */; };
+		0374D8F53009DE6100658327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8DA3009DE6100658327 /* SceneDelegate.swift */; };
+		0374D8F63009DE6100658327 /* HABCardDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8B53009DE6100658327 /* HABCardDemoViewController.swift */; };
+		0374D8F73009DE6100658327 /* HABAvatarDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8B93009DE6100658327 /* HABAvatarDemoViewController.swift */; };
+		0374D8F83009DE6100658327 /* HABButtonDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8AF3009DE6100658327 /* HABButtonDemoViewController.swift */; };
+		0374D8F93009DE6100658327 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8CC3009DE6100658327 /* SelectionViewController.swift */; };
+		0374D8FA3009DE6100658327 /* HABToastDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8C23009DE6100658327 /* HABToastDemoViewController.swift */; };
+		0374D8FB3009DE6100658327 /* ThemeSwitcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D8B23009DE6100658327 /* ThemeSwitcherViewController.swift */; };
+		0374D8FC3009DE6100658327 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0374D8D83009DE6100658327 /* Main.storyboard */; };
+		0374D8FE3009DE6100658327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0374D8D33009DE6100658327 /* Assets.xcassets */; };
+		0374D8FF3009DE6100658327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0374D8D63009DE6100658327 /* LaunchScreen.storyboard */; };
+		0374D9013009E1C700658327 /* SwiftUIPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D9003009E1C700658327 /* SwiftUIPlaceholderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03D541EE2FF35CC800BB2C51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03D541542FF359B300BB2C51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03D541D72FF35CC600BB2C51;
+			remoteInfo = HABUIKitSample;
+		};
+		03D541F82FF35CC800BB2C51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03D541542FF359B300BB2C51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03D541D72FF35CC600BB2C51;
+			remoteInfo = HABUIKitSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0341BE5B2FF8A7CA00EB1F77 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0374D8AE3009DE6100658327 /* ButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
+		0374D8AF3009DE6100658327 /* HABButtonDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABButtonDemoViewController.swift; sourceTree = "<group>"; };
+		0374D8B13009DE6100658327 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		0374D8B23009DE6100658327 /* ThemeSwitcherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSwitcherViewController.swift; sourceTree = "<group>"; };
+		0374D8B43009DE6100658327 /* ContainersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainersViewController.swift; sourceTree = "<group>"; };
+		0374D8B53009DE6100658327 /* HABCardDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABCardDemoViewController.swift; sourceTree = "<group>"; };
+		0374D8B63009DE6100658327 /* HABDividerDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABDividerDemoViewController.swift; sourceTree = "<group>"; };
+		0374D8B83009DE6100658327 /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
+		0374D8B93009DE6100658327 /* HABAvatarDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABAvatarDemoViewController.swift; sourceTree = "<group>"; };
+		0374D8BA3009DE6100658327 /* HABBadgeDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABBadgeDemoViewController.swift; sourceTree = "<group>"; };
+		0374D8BB3009DE6100658327 /* HABLabelDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABLabelDemoViewController.swift; sourceTree = "<group>"; };
+		0374D8BC3009DE6100658327 /* HABTagDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABTagDemoViewController.swift; sourceTree = "<group>"; };
+		0374D8BE3009DE6100658327 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		0374D8BF3009DE6100658327 /* HABBannerDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABBannerDemoViewController.swift; sourceTree = "<group>"; };
+		0374D8C03009DE6100658327 /* HABEmptyStateDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABEmptyStateDemoViewController.swift; sourceTree = "<group>"; };
+		0374D8C13009DE6100658327 /* HABLoadingViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABLoadingViewDemoViewController.swift; sourceTree = "<group>"; };
+		0374D8C23009DE6100658327 /* HABToastDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABToastDemoViewController.swift; sourceTree = "<group>"; };
+		0374D8C43009DE6100658327 /* FoundationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationViewController.swift; sourceTree = "<group>"; };
+		0374D8C63009DE6100658327 /* HABTextFieldDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABTextFieldDemoViewController.swift; sourceTree = "<group>"; };
+		0374D8C73009DE6100658327 /* HABTextViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABTextViewDemoViewController.swift; sourceTree = "<group>"; };
+		0374D8C83009DE6100658327 /* InputsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsViewController.swift; sourceTree = "<group>"; };
+		0374D8CA3009DE6100658327 /* HABSegmentedControlDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABSegmentedControlDemoViewController.swift; sourceTree = "<group>"; };
+		0374D8CB3009DE6100658327 /* HABToggleDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABToggleDemoViewController.swift; sourceTree = "<group>"; };
+		0374D8CC3009DE6100658327 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		0374D8CE3009DE6100658327 /* ComponentDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentDemoViewController.swift; sourceTree = "<group>"; };
+		0374D8CF3009DE6100658327 /* PlaceholderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderViewController.swift; sourceTree = "<group>"; };
+		0374D8D23009DE6100658327 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0374D8D33009DE6100658327 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0374D8D43009DE6100658327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0374D8D53009DE6100658327 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0374D8D73009DE6100658327 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0374D8D93009DE6100658327 /* SampleNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleNavigationController.swift; sourceTree = "<group>"; };
+		0374D8DA3009DE6100658327 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0374D8DB3009DE6100658327 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0374D9003009E1C700658327 /* SwiftUIPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlaceholderView.swift; sourceTree = "<group>"; };
+		03D541D82FF35CC600BB2C51 /* HABDesignSystemSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HABDesignSystemSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03D541ED2FF35CC800BB2C51 /* HABDesignSystemSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HABDesignSystemSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03D541F72FF35CC800BB2C51 /* HABDesignSystemSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HABDesignSystemSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E172B32FF40033007958BF /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = .swiftlint.yml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		03D5415F2FF359B300BB2C51 /* Sources/HABUIKit */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Sources/HABUIKit;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03D541D52FF35CC600BB2C51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0374D8AB3009DC7E00658327 /* HABSwiftUI in Frameworks */,
+				0374D8AD3009DC7E00658327 /* HABUIKit in Frameworks */,
+				0374D8A93009DC7E00658327 /* HABFoundation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D541EA2FF35CC800BB2C51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D541F42FF35CC800BB2C51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0341BE562FF8A7CA00EB1F77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0374D8B03009DE6100658327 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				0374D8AE3009DE6100658327 /* ButtonsViewController.swift */,
+				0374D8AF3009DE6100658327 /* HABButtonDemoViewController.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		0374D8B33009DE6100658327 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				0374D8B13009DE6100658327 /* CatalogViewController.swift */,
+				0374D8B23009DE6100658327 /* ThemeSwitcherViewController.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		0374D8B73009DE6100658327 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				0374D8B43009DE6100658327 /* ContainersViewController.swift */,
+				0374D8B53009DE6100658327 /* HABCardDemoViewController.swift */,
+				0374D8B63009DE6100658327 /* HABDividerDemoViewController.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		0374D8BD3009DE6100658327 /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				0374D8B83009DE6100658327 /* DisplayViewController.swift */,
+				0374D8B93009DE6100658327 /* HABAvatarDemoViewController.swift */,
+				0374D8BA3009DE6100658327 /* HABBadgeDemoViewController.swift */,
+				0374D8BB3009DE6100658327 /* HABLabelDemoViewController.swift */,
+				0374D8BC3009DE6100658327 /* HABTagDemoViewController.swift */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		0374D8C33009DE6100658327 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				0374D8BE3009DE6100658327 /* FeedbackViewController.swift */,
+				0374D8BF3009DE6100658327 /* HABBannerDemoViewController.swift */,
+				0374D8C03009DE6100658327 /* HABEmptyStateDemoViewController.swift */,
+				0374D8C13009DE6100658327 /* HABLoadingViewDemoViewController.swift */,
+				0374D8C23009DE6100658327 /* HABToastDemoViewController.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		0374D8C53009DE6100658327 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				0374D8C43009DE6100658327 /* FoundationViewController.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		0374D8C93009DE6100658327 /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				0374D8C63009DE6100658327 /* HABTextFieldDemoViewController.swift */,
+				0374D8C73009DE6100658327 /* HABTextViewDemoViewController.swift */,
+				0374D8C83009DE6100658327 /* InputsViewController.swift */,
+			);
+			path = Inputs;
+			sourceTree = "<group>";
+		};
+		0374D8CD3009DE6100658327 /* Selection */ = {
+			isa = PBXGroup;
+			children = (
+				0374D8CA3009DE6100658327 /* HABSegmentedControlDemoViewController.swift */,
+				0374D8CB3009DE6100658327 /* HABToggleDemoViewController.swift */,
+				0374D8CC3009DE6100658327 /* SelectionViewController.swift */,
+			);
+			path = Selection;
+			sourceTree = "<group>";
+		};
+		0374D8D03009DE6100658327 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0374D8CE3009DE6100658327 /* ComponentDemoViewController.swift */,
+				0374D8CF3009DE6100658327 /* PlaceholderViewController.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0374D8D13009DE6100658327 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0374D9003009E1C700658327 /* SwiftUIPlaceholderView.swift */,
+				0374D8B03009DE6100658327 /* Buttons */,
+				0374D8B33009DE6100658327 /* Catalog */,
+				0374D8B73009DE6100658327 /* Containers */,
+				0374D8BD3009DE6100658327 /* Display */,
+				0374D8C33009DE6100658327 /* Feedback */,
+				0374D8C53009DE6100658327 /* Foundation */,
+				0374D8C93009DE6100658327 /* Inputs */,
+				0374D8CD3009DE6100658327 /* Selection */,
+				0374D8D03009DE6100658327 /* Shared */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0374D8DC3009DE6100658327 /* HABDesignSystemSample */ = {
+			isa = PBXGroup;
+			children = (
+				0374D8D13009DE6100658327 /* Scenes */,
+				0374D8D23009DE6100658327 /* AppDelegate.swift */,
+				0374D8D33009DE6100658327 /* Assets.xcassets */,
+				0374D8D43009DE6100658327 /* Info.plist */,
+				0374D8D63009DE6100658327 /* LaunchScreen.storyboard */,
+				0374D8D83009DE6100658327 /* Main.storyboard */,
+				0374D8D93009DE6100658327 /* SampleNavigationController.swift */,
+				0374D8DA3009DE6100658327 /* SceneDelegate.swift */,
+				0374D8DB3009DE6100658327 /* ViewController.swift */,
+			);
+			path = HABDesignSystemSample;
+			sourceTree = "<group>";
+		};
+		0374D8DD3009DE6100658327 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				0374D8DC3009DE6100658327 /* HABDesignSystemSample */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		03D541532FF359B300BB2C51 = {
+			isa = PBXGroup;
+			children = (
+				03E172B32FF40033007958BF /* .swiftlint.yml */,
+				03D5415F2FF359B300BB2C51 /* Sources/HABUIKit */,
+				0341BE562FF8A7CA00EB1F77 /* Frameworks */,
+				03D5415E2FF359B300BB2C51 /* Products */,
+				0374D8DD3009DE6100658327 /* Sample */,
+			);
+			sourceTree = "<group>";
+		};
+		03D5415E2FF359B300BB2C51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03D541D82FF35CC600BB2C51 /* HABDesignSystemSample.app */,
+				03D541ED2FF35CC800BB2C51 /* HABDesignSystemSampleTests.xctest */,
+				03D541F72FF35CC800BB2C51 /* HABDesignSystemSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03D541D72FF35CC600BB2C51 /* HABDesignSystemSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03D542002FF35CC800BB2C51 /* Build configuration list for PBXNativeTarget "HABDesignSystemSample" */;
+			buildPhases = (
+				03D541D42FF35CC600BB2C51 /* Sources */,
+				03D541D52FF35CC600BB2C51 /* Frameworks */,
+				03D541D62FF35CC600BB2C51 /* Resources */,
+				0341BE5B2FF8A7CA00EB1F77 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HABDesignSystemSample;
+			packageProductDependencies = (
+				0374D8A83009DC7E00658327 /* HABFoundation */,
+				0374D8AA3009DC7E00658327 /* HABSwiftUI */,
+				0374D8AC3009DC7E00658327 /* HABUIKit */,
+			);
+			productName = HABUIKitSample;
+			productReference = 03D541D82FF35CC600BB2C51 /* HABDesignSystemSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03D541EC2FF35CC800BB2C51 /* HABDesignSystemSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03D542032FF35CC800BB2C51 /* Build configuration list for PBXNativeTarget "HABDesignSystemSampleTests" */;
+			buildPhases = (
+				03D541E92FF35CC800BB2C51 /* Sources */,
+				03D541EA2FF35CC800BB2C51 /* Frameworks */,
+				03D541EB2FF35CC800BB2C51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03D541EF2FF35CC800BB2C51 /* PBXTargetDependency */,
+			);
+			name = HABDesignSystemSampleTests;
+			packageProductDependencies = (
+			);
+			productName = HABUIKitSampleTests;
+			productReference = 03D541ED2FF35CC800BB2C51 /* HABDesignSystemSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03D541F62FF35CC800BB2C51 /* HABDesignSystemSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03D542062FF35CC800BB2C51 /* Build configuration list for PBXNativeTarget "HABDesignSystemSampleUITests" */;
+			buildPhases = (
+				03D541F32FF35CC800BB2C51 /* Sources */,
+				03D541F42FF35CC800BB2C51 /* Frameworks */,
+				03D541F52FF35CC800BB2C51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03D541F92FF35CC800BB2C51 /* PBXTargetDependency */,
+			);
+			name = HABDesignSystemSampleUITests;
+			packageProductDependencies = (
+			);
+			productName = HABUIKitSampleUITests;
+			productReference = 03D541F72FF35CC800BB2C51 /* HABDesignSystemSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03D541542FF359B300BB2C51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					03D541D72FF35CC600BB2C51 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					03D541EC2FF35CC800BB2C51 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 03D541D72FF35CC600BB2C51;
+					};
+					03D541F62FF35CC800BB2C51 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 03D541D72FF35CC600BB2C51;
+					};
+				};
+			};
+			buildConfigurationList = 03D541572FF359B300BB2C51 /* Build configuration list for PBXProject "HABDesignSystemSample" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03D541532FF359B300BB2C51;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0374D8A73009DC7E00658327 /* XCLocalSwiftPackageReference "../HABDesignSystem" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 03D5415E2FF359B300BB2C51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03D541D72FF35CC600BB2C51 /* HABDesignSystemSample */,
+				03D541EC2FF35CC800BB2C51 /* HABDesignSystemSampleTests */,
+				03D541F62FF35CC800BB2C51 /* HABDesignSystemSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03D541D62FF35CC600BB2C51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0374D8FC3009DE6100658327 /* Main.storyboard in Resources */,
+				0374D8FE3009DE6100658327 /* Assets.xcassets in Resources */,
+				0374D8FF3009DE6100658327 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D541EB2FF35CC800BB2C51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D541F52FF35CC800BB2C51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03D541D42FF35CC600BB2C51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0374D8DE3009DE6100658327 /* HABBadgeDemoViewController.swift in Sources */,
+				0374D8DF3009DE6100658327 /* HABEmptyStateDemoViewController.swift in Sources */,
+				0374D8E03009DE6100658327 /* ComponentDemoViewController.swift in Sources */,
+				0374D8E13009DE6100658327 /* HABTextViewDemoViewController.swift in Sources */,
+				0374D8E23009DE6100658327 /* FoundationViewController.swift in Sources */,
+				0374D8E33009DE6100658327 /* HABToggleDemoViewController.swift in Sources */,
+				0374D8E43009DE6100658327 /* ViewController.swift in Sources */,
+				0374D8E53009DE6100658327 /* FeedbackViewController.swift in Sources */,
+				0374D8E63009DE6100658327 /* AppDelegate.swift in Sources */,
+				0374D8E73009DE6100658327 /* HABTagDemoViewController.swift in Sources */,
+				0374D8E83009DE6100658327 /* HABLabelDemoViewController.swift in Sources */,
+				0374D8E93009DE6100658327 /* HABLoadingViewDemoViewController.swift in Sources */,
+				0374D8EA3009DE6100658327 /* ContainersViewController.swift in Sources */,
+				0374D8EB3009DE6100658327 /* InputsViewController.swift in Sources */,
+				0374D8EC3009DE6100658327 /* HABSegmentedControlDemoViewController.swift in Sources */,
+				0374D8ED3009DE6100658327 /* HABDividerDemoViewController.swift in Sources */,
+				0374D8EE3009DE6100658327 /* HABTextFieldDemoViewController.swift in Sources */,
+				0374D8EF3009DE6100658327 /* HABBannerDemoViewController.swift in Sources */,
+				0374D8F03009DE6100658327 /* ButtonsViewController.swift in Sources */,
+				0374D8F13009DE6100658327 /* CatalogViewController.swift in Sources */,
+				0374D8F23009DE6100658327 /* PlaceholderViewController.swift in Sources */,
+				0374D8F33009DE6100658327 /* DisplayViewController.swift in Sources */,
+				0374D8F43009DE6100658327 /* SampleNavigationController.swift in Sources */,
+				0374D8F53009DE6100658327 /* SceneDelegate.swift in Sources */,
+				0374D8F63009DE6100658327 /* HABCardDemoViewController.swift in Sources */,
+				0374D9013009E1C700658327 /* SwiftUIPlaceholderView.swift in Sources */,
+				0374D8F73009DE6100658327 /* HABAvatarDemoViewController.swift in Sources */,
+				0374D8F83009DE6100658327 /* HABButtonDemoViewController.swift in Sources */,
+				0374D8F93009DE6100658327 /* SelectionViewController.swift in Sources */,
+				0374D8FA3009DE6100658327 /* HABToastDemoViewController.swift in Sources */,
+				0374D8FB3009DE6100658327 /* ThemeSwitcherViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D541E92FF35CC800BB2C51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03D541F32FF35CC800BB2C51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03D541EF2FF35CC800BB2C51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03D541D72FF35CC600BB2C51 /* HABDesignSystemSample */;
+			targetProxy = 03D541EE2FF35CC800BB2C51 /* PBXContainerItemProxy */;
+		};
+		03D541F92FF35CC800BB2C51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03D541D72FF35CC600BB2C51 /* HABDesignSystemSample */;
+			targetProxy = 03D541F82FF35CC800BB2C51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0374D8D63009DE6100658327 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0374D8D53009DE6100658327 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0374D8D83009DE6100658327 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0374D8D73009DE6100658327 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03D5416F2FF359B400BB2C51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9366E92J33;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		03D541702FF359B400BB2C51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9366E92J33;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		03D542012FF35CC800BB2C51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9366E92J33;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sample/HABDesignSystemSample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haberdashery1234.HABUIKitSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03D542022FF35CC800BB2C51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9366E92J33;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sample/HABDesignSystemSample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haberdashery1234.HABUIKitSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03D542042FF35CC800BB2C51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9366E92J33;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haberdashery1234.HABUIKitSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HABDesignSystemSampleSample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HABDesignSystemSampleSample";
+			};
+			name = Debug;
+		};
+		03D542052FF35CC800BB2C51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9366E92J33;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haberdashery1234.HABUIKitSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HABDesignSystemSampleSample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HABDesignSystemSampleSample";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03D542072FF35CC800BB2C51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9366E92J33;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haberdashery1234.HABUIKitSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HABUIKitSample;
+			};
+			name = Debug;
+		};
+		03D542082FF35CC800BB2C51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9366E92J33;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haberdashery1234.HABUIKitSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HABUIKitSample;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03D541572FF359B300BB2C51 /* Build configuration list for PBXProject "HABDesignSystemSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D5416F2FF359B400BB2C51 /* Debug */,
+				03D541702FF359B400BB2C51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03D542002FF35CC800BB2C51 /* Build configuration list for PBXNativeTarget "HABDesignSystemSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D542012FF35CC800BB2C51 /* Debug */,
+				03D542022FF35CC800BB2C51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03D542032FF35CC800BB2C51 /* Build configuration list for PBXNativeTarget "HABDesignSystemSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D542042FF35CC800BB2C51 /* Debug */,
+				03D542052FF35CC800BB2C51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03D542062FF35CC800BB2C51 /* Build configuration list for PBXNativeTarget "HABDesignSystemSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D542072FF35CC800BB2C51 /* Debug */,
+				03D542082FF35CC800BB2C51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		0374D8A73009DC7E00658327 /* XCLocalSwiftPackageReference "../HABDesignSystem" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../HABDesignSystem;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0374D8A83009DC7E00658327 /* HABFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HABFoundation;
+		};
+		0374D8AA3009DC7E00658327 /* HABSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HABSwiftUI;
+		};
+		0374D8AC3009DC7E00658327 /* HABUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HABUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 03D541542FF359B300BB2C51 /* Project object */;
+}
