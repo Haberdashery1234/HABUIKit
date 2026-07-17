@@ -2,7 +2,12 @@
 #
 # build-xcframework.sh
 #
-# Builds HABUIKit.xcframework containing slices for:
+# Builds three xcframeworks from the HABDesignSystem SPM package:
+#   • HABFoundation.xcframework — design tokens, theme system
+#   • HABUIKit.xcframework      — UIKit components
+#   • HABSwiftUI.xcframework    — SwiftUI components
+#
+# Each xcframework contains slices for:
 #   • iOS device        (arm64)
 #   • iOS Simulator     (arm64 + x86_64)
 #   • macOS             (Mac Catalyst, arm64 + x86_64)
@@ -12,40 +17,30 @@
 #   ./Scripts/build-xcframework.sh
 #
 # Output:
+#   build/HABFoundation.xcframework
 #   build/HABUIKit.xcframework
-#
-# Requirements:
-#   • Xcode command-line tools
-#   • xcpretty (optional, for readable output): gem install xcpretty
+#   build/HABSwiftUI.xcframework
 #
 
 set -euo pipefail
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-PROJECT="HABUIKit.xcodeproj"
-SCHEME="HABUIKit"
 CONFIGURATION="Release"
 BUILD_DIR="build"
 DERIVED_DATA="$BUILD_DIR/DerivedData"
-XCFRAMEWORK_OUTPUT="$BUILD_DIR/HABUIKit.xcframework"
 
-# Common xcodebuild flags passed to every archive step.
-# SKIP_INSTALL=NO  — places the framework in the archive's Products/ folder.
-#                    This matches the project setting; passed explicitly for clarity.
-# BUILD_LIBRARY_FOR_DISTRIBUTION=YES — emits .swiftinterface files so the
-#                    binary framework is usable across different Swift versions.
-#                    Also matches the project setting; explicit for documentation.
+# Frameworks to build, in dependency order.
+FRAMEWORKS=("HABFoundation" "HABUIKit" "HABSwiftUI")
+
+# Common xcodebuild flags.
 COMMON_FLAGS=(
-    -project "$PROJECT"
-    -scheme "$SCHEME"
     -configuration "$CONFIGURATION"
     -derivedDataPath "$DERIVED_DATA"
     SKIP_INSTALL=NO
     BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 )
 
-# Use xcpretty for cleaner output if available, otherwise raw xcodebuild logs.
 if command -v xcpretty &> /dev/null; then
     FORMATTER=(xcpretty)
 else
@@ -58,47 +53,49 @@ echo "▸ Cleaning previous build..."
 rm -rf "$BUILD_DIR"
 mkdir -p "$BUILD_DIR"
 
-# ── Archive: iOS device ───────────────────────────────────────────────────────
+# ── Build each framework ──────────────────────────────────────────────────────
 
-echo "▸ Archiving for iOS (device)..."
-xcodebuild archive \
-    "${COMMON_FLAGS[@]}" \
-    -destination "generic/platform=iOS" \
-    -archivePath "$BUILD_DIR/ios.xcarchive" \
-    | "${FORMATTER[@]}"
+for SCHEME in "${FRAMEWORKS[@]}"; do
+    echo ""
+    echo "▸ Building $SCHEME..."
 
-# ── Archive: iOS Simulator ────────────────────────────────────────────────────
+    xcodebuild archive \
+        "${COMMON_FLAGS[@]}" \
+        -scheme "$SCHEME" \
+        -destination "generic/platform=iOS" \
+        -archivePath "$BUILD_DIR/$SCHEME-ios.xcarchive" \
+        | "${FORMATTER[@]}"
 
-echo "▸ Archiving for iOS Simulator..."
-xcodebuild archive \
-    "${COMMON_FLAGS[@]}" \
-    -destination "generic/platform=iOS Simulator" \
-    -archivePath "$BUILD_DIR/ios-sim.xcarchive" \
-    | "${FORMATTER[@]}"
+    xcodebuild archive \
+        "${COMMON_FLAGS[@]}" \
+        -scheme "$SCHEME" \
+        -destination "generic/platform=iOS Simulator" \
+        -archivePath "$BUILD_DIR/$SCHEME-ios-sim.xcarchive" \
+        | "${FORMATTER[@]}"
 
-# ── Archive: macOS (Mac Catalyst) ─────────────────────────────────────────────
+    xcodebuild archive \
+        "${COMMON_FLAGS[@]}" \
+        -scheme "$SCHEME" \
+        -destination "platform=macOS,variant=Mac Catalyst" \
+        -archivePath "$BUILD_DIR/$SCHEME-macos.xcarchive" \
+        | "${FORMATTER[@]}"
 
-echo "▸ Archiving for macOS (Mac Catalyst)..."
-xcodebuild archive \
-    "${COMMON_FLAGS[@]}" \
-    -destination "platform=macOS,variant=Mac Catalyst" \
-    -archivePath "$BUILD_DIR/macos.xcarchive" \
-    | "${FORMATTER[@]}"
+    xcodebuild -create-xcframework \
+        -framework "$BUILD_DIR/$SCHEME-ios.xcarchive/Products/Library/Frameworks/$SCHEME.framework" \
+        -framework "$BUILD_DIR/$SCHEME-ios-sim.xcarchive/Products/Library/Frameworks/$SCHEME.framework" \
+        -framework "$BUILD_DIR/$SCHEME-macos.xcarchive/Products/Library/Frameworks/$SCHEME.framework" \
+        -output "$BUILD_DIR/$SCHEME.xcframework"
 
-# ── Create xcframework ────────────────────────────────────────────────────────
-
-echo "▸ Creating xcframework..."
-xcodebuild -create-xcframework \
-    -framework "$BUILD_DIR/ios.xcarchive/Products/Library/Frameworks/HABUIKit.framework" \
-    -framework "$BUILD_DIR/ios-sim.xcarchive/Products/Library/Frameworks/HABUIKit.framework" \
-    -framework "$BUILD_DIR/macos.xcarchive/Products/Library/Frameworks/HABUIKit.framework" \
-    -output "$XCFRAMEWORK_OUTPUT"
+    echo "  ✅ $BUILD_DIR/$SCHEME.xcframework"
+done
 
 # ── Done ──────────────────────────────────────────────────────────────────────
 
 echo ""
-echo "✅ Built: $XCFRAMEWORK_OUTPUT"
+echo "✅ All frameworks built in $BUILD_DIR/"
 echo ""
-echo "To distribute via binary SPM, zip the xcframework and host it:"
-echo "  zip -r HABUIKit.xcframework.zip $XCFRAMEWORK_OUTPUT"
-echo "  # Then update Package.swift to use .binaryTarget(name:url:checksum:)"
+echo "To distribute via binary SPM, zip each xcframework:"
+echo "  cd $BUILD_DIR"
+echo "  zip -r HABFoundation.xcframework.zip HABFoundation.xcframework"
+echo "  zip -r HABUIKit.xcframework.zip HABUIKit.xcframework"
+echo "  zip -r HABSwiftUI.xcframework.zip HABSwiftUI.xcframework"
