@@ -5,6 +5,7 @@
 //  Created by Christian Grise on 6/29/26.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 /// The built-in fallback theme for HABUIKit.
@@ -28,3 +29,4 @@ public struct HABDefaultTheme: HABTheme {
 
     public init() {}
 }
+#endif

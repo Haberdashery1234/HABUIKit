@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HABFoundation
 
 public extension UIFont {
     // MARK: - Full Style Access

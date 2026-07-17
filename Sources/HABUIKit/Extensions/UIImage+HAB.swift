@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HABFoundation
 
 public extension UIImage {
     // MARK: - Tinting

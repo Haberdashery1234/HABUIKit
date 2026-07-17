@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HABFoundation
 
 public final class HABDivider: UIView {
     // MARK: - Public Types

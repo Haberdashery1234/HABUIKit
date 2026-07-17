@@ -14,6 +14,7 @@
 //  experience, or swap from HABLightTheme in response to a user toggle.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public struct HABDarkTheme: HABTheme {
@@ -78,3 +79,4 @@ private extension UIColor {
         )
     }
 }
+#endif

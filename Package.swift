@@ -1,48 +1,75 @@
-// swift-tools-version: 6.0
+// swift-tools-version: 6.2
 //
 // Package.swift
-// HABUIKit
+// HABDesignSystem
 //
-// Supports three distribution paths:
+// Three frameworks, one package:
+//   HABFoundation — design tokens, theme protocol, spacing, typography
+//   HABUIKit      — UIKit components (depends on HABFoundation)
+//   HABSwiftUI    — SwiftUI components (depends on HABFoundation)
+//
+// Distribution:
 //   • Swift Package Manager — add this repo as a package dependency
-//   • .framework            — build the HABUIKit scheme in Xcode
 //   • .xcframework          — run Scripts/build-xcframework.sh
-//
 
 import PackageDescription
 
+let swiftSettings: [SwiftSetting] = [
+    // Swift 5 semantics avoids Sendable annotation churn in UIKit-heavy code.
+    .swiftLanguageMode(.v5)
+]
+
 let package = Package(
-    name: "HABUIKit",
+    name: "HABDesignSystem",
     platforms: [
         .iOS(.v26),
         .macCatalyst(.v26)
     ],
     products: [
-        .library(
-            name: "HABUIKit",
-            targets: ["HABUIKit"]
-        )
+        .library(name: "HABFoundation", targets: ["HABFoundation"]),
+        .library(name: "HABUIKit",      targets: ["HABUIKit"]),
+        .library(name: "HABSwiftUI",    targets: ["HABSwiftUI"])
     ],
     targets: [
-        // Sources live at Sources/HABUIKit/ — the default SPM path, no override needed.
-        // SPM picks up all .swift files and the HABUIKit.docc catalog automatically.
+        // MARK: - HABFoundation
+        // Design tokens, theme protocol, theme manager, spacing, typography.
+        // No dependency on HABUIKit or HABSwiftUI.
+        .target(
+            name: "HABFoundation",
+            swiftSettings: swiftSettings
+        ),
+
+        // MARK: - HABUIKit
+        // UIKit components. Depends on HABFoundation for tokens and theming.
         .target(
             name: "HABUIKit",
-            swiftSettings: [
-                // Keep Swift 5 semantics so UIKit-heavy code compiles cleanly
-                // under a Swift 6 toolchain without Sendable annotation churn.
-                .swiftLanguageMode(.v5)
-            ]
+            dependencies: ["HABFoundation"],
+            swiftSettings: swiftSettings
+        ),
+
+        // MARK: - HABSwiftUI
+        // SwiftUI components. Depends on HABFoundation for tokens and theming.
+        .target(
+            name: "HABSwiftUI",
+            dependencies: ["HABFoundation"],
+            swiftSettings: swiftSettings
+        ),
+
+        // MARK: - Tests
+        .testTarget(
+            name: "HABFoundationTests",
+            dependencies: ["HABFoundation"],
+            swiftSettings: swiftSettings
         ),
         .testTarget(
             name: "HABUIKitTests",
             dependencies: ["HABUIKit"],
-            // Tests remain at HABUIKitTests/ (alongside the Xcode project) rather
-            // than the SPM default of Tests/HABUIKitTests/, so the path is explicit.
-            path: "HABUIKitTests",
-            swiftSettings: [
-                .swiftLanguageMode(.v5)
-            ]
+            swiftSettings: swiftSettings
+        ),
+        .testTarget(
+            name: "HABSwiftUITests",
+            dependencies: ["HABSwiftUI"],
+            swiftSettings: swiftSettings
         )
     ]
 )

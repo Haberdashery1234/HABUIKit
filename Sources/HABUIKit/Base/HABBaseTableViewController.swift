@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HABFoundation
 
 /// A UITableViewController subclass that automatically applies theme colors
 /// to the view and table view, and re-applies them when the theme changes.

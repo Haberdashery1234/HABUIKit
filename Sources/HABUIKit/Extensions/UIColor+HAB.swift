@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HABFoundation
 
 /// Convenience access to the active theme's semantic color tokens.
 ///

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HABFoundation
 
 /// A UILabel subclass that stays in sync with the active HABUIKit theme and type scale.
 ///

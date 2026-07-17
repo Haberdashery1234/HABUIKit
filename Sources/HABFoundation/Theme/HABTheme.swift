@@ -5,6 +5,7 @@
 //  Created by Christian Grise on 6/29/26.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 /// Defines the visual identity of an app using HABUIKit.
@@ -41,3 +42,4 @@ public protocol HABTheme {
     /// The typography token set for this theme.
     var typography: HABTypographyTokens { get }
 }
+#endif

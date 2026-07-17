@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HABFoundation
 
 /// A UIViewController subclass that automatically sets the view background
 /// to the active theme's background color and re-applies it when the theme changes.

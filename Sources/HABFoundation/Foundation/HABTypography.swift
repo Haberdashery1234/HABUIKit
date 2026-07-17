@@ -5,6 +5,7 @@
 //  Created by Christian Grise on 6/29/26.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - HABTextStyle
@@ -198,3 +199,4 @@ public struct HABTypographyTokens {
         }
     }
 }
+#endif

@@ -5,7 +5,8 @@
 //  Created by Christian Grise on 6/29/26.
 //
 
-import UIKit
+#if canImport(UIKit)
+import Foundation
 
 /// Manages the active HABUIKit theme for the app.
 ///
@@ -63,3 +64,4 @@ public final class HABThemeManager {
     /// The `userInfo` key for the incoming theme's `name` string.
     public static let themeNameKey = "HABThemeManagerThemeNameKey"
 }
+#endif

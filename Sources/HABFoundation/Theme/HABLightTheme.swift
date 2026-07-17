@@ -11,6 +11,7 @@
 //  manual light/dark toggle inside your app.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public struct HABLightTheme: HABTheme {
@@ -75,3 +76,4 @@ private extension UIColor {
         )
     }
 }
+#endif

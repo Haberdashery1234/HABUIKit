@@ -5,6 +5,7 @@
 //  Created by Christian Grise on 6/29/26.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 /// Semantic color tokens for HABUIKit.
@@ -177,3 +178,4 @@ public struct HABColorTokens {
         self.overlay             = overlay
     }
 }
+#endif

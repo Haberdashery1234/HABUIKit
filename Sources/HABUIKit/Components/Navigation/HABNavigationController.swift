@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HABFoundation
 
 public class HABNavigationController: UINavigationController {
     // MARK: - Lifecycle

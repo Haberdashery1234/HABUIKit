@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HABFoundation
 
 public class HABTabBarController: UITabBarController {
     // MARK: - Lifecycle

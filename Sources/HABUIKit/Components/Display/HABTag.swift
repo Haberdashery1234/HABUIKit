@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HABFoundation
 
 public final class HABTag: UIView {
     // MARK: - Public Types

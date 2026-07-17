@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HABFoundation
 
 /// A UICollectionViewController subclass that automatically applies theme colors
 /// to the view and collection view, and re-applies them when the theme changes.

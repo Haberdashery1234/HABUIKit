@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HABFoundation
 
 /// A themed UIImageView wrapper that supports placeholder images, content modes,
 /// corner radius, and automatic theme adaptation.

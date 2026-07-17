@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HABFoundation
 
 public final class HABBadge: UIView {
     // MARK: - Public Properties

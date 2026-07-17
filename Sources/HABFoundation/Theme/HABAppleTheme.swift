@@ -10,6 +10,7 @@
 //  Apple platform without any visual opinion of your own.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public struct HABAppleTheme: HABTheme {
@@ -20,3 +21,4 @@ public struct HABAppleTheme: HABTheme {
 
     public init() {}
 }
+#endif

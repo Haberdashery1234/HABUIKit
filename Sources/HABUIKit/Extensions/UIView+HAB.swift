@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import HABFoundation
 
 public extension UIView {
     // MARK: - Subview Helpers
