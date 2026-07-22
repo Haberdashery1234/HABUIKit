@@ -38,7 +38,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             selectedImage: UIImage(systemName: "rectangle.stack.fill")
         )
 
-        let swiftUIHost = UIHostingController(rootView: SwiftUIPlaceholderView())
+        let swiftUIHost = UIHostingController(rootView: HABSwiftUICatalogView())
         swiftUIHost.tabBarItem = UITabBarItem(
             title: "SwiftUI",
             image: UIImage(systemName: "swift"),

@@ -43,7 +43,13 @@
 		0374D8FC3009DE6100658327 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0374D8D83009DE6100658327 /* Main.storyboard */; };
 		0374D8FE3009DE6100658327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0374D8D33009DE6100658327 /* Assets.xcassets */; };
 		0374D8FF3009DE6100658327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0374D8D63009DE6100658327 /* LaunchScreen.storyboard */; };
-		0374D9013009E1C700658327 /* SwiftUIPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374D9003009E1C700658327 /* SwiftUIPlaceholderView.swift */; };
+		03A049D3300FFA1A006C9C95 /* HABButtonStyleDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A049CC300FFA1A006C9C95 /* HABButtonStyleDemoView.swift */; };
+		03A049D4300FFA1A006C9C95 /* HABSwiftUICatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A049D0300FFA1A006C9C95 /* HABSwiftUICatalogView.swift */; };
+		03A049D5300FFA1A006C9C95 /* HABTextFieldDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A049CE300FFA1A006C9C95 /* HABTextFieldDemoView.swift */; };
+		03A049D7300FFA64006C9C95 /* SwiftUIPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A049D1300FFA1A006C9C95 /* SwiftUIPlaceholderView.swift */; };
+		03A049D930103D89006C9C95 /* HABSwiftUIThemeSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A049D830103D89006C9C95 /* HABSwiftUIThemeSwitcherView.swift */; };
+		03A049DB3010457F006C9C95 /* ThemeSwitcherToolbarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A049DA3010457F006C9C95 /* ThemeSwitcherToolbarModifier.swift */; };
+		03A049DD30104747006C9C95 /* HABThemeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A049DC30104747006C9C95 /* HABThemeObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,20 +117,18 @@
 		0374D8D93009DE6100658327 /* SampleNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleNavigationController.swift; sourceTree = "<group>"; };
 		0374D8DA3009DE6100658327 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0374D8DB3009DE6100658327 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0374D9003009E1C700658327 /* SwiftUIPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlaceholderView.swift; sourceTree = "<group>"; };
+		03A049CB300FF06B006C9C95 /* SwiftlintRules.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = SwiftlintRules.yml; sourceTree = "<group>"; };
+		03A049CC300FFA1A006C9C95 /* HABButtonStyleDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABButtonStyleDemoView.swift; sourceTree = "<group>"; };
+		03A049CE300FFA1A006C9C95 /* HABTextFieldDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABTextFieldDemoView.swift; sourceTree = "<group>"; };
+		03A049D0300FFA1A006C9C95 /* HABSwiftUICatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABSwiftUICatalogView.swift; sourceTree = "<group>"; };
+		03A049D1300FFA1A006C9C95 /* SwiftUIPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlaceholderView.swift; sourceTree = "<group>"; };
+		03A049D830103D89006C9C95 /* HABSwiftUIThemeSwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABSwiftUIThemeSwitcherView.swift; sourceTree = "<group>"; };
+		03A049DA3010457F006C9C95 /* ThemeSwitcherToolbarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSwitcherToolbarModifier.swift; sourceTree = "<group>"; };
+		03A049DC30104747006C9C95 /* HABThemeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABThemeObserver.swift; sourceTree = "<group>"; };
 		03D541D82FF35CC600BB2C51 /* HABDesignSystemSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HABDesignSystemSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D541ED2FF35CC800BB2C51 /* HABDesignSystemSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HABDesignSystemSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D541F72FF35CC800BB2C51 /* HABDesignSystemSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HABDesignSystemSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		03E172B32FF40033007958BF /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		03D5415F2FF359B300BB2C51 /* Sources/HABUIKit */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Sources/HABUIKit;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		03D541D52FF35CC600BB2C51 /* Frameworks */ = {
@@ -253,7 +257,6 @@
 		0374D8D13009DE6100658327 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				0374D9003009E1C700658327 /* SwiftUIPlaceholderView.swift */,
 				0374D8B03009DE6100658327 /* Buttons */,
 				0374D8B33009DE6100658327 /* Catalog */,
 				0374D8B73009DE6100658327 /* Containers */,
@@ -263,6 +266,7 @@
 				0374D8C93009DE6100658327 /* Inputs */,
 				0374D8CD3009DE6100658327 /* Selection */,
 				0374D8D03009DE6100658327 /* Shared */,
+				03A049D2300FFA1A006C9C95 /* SwiftUI */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -291,14 +295,43 @@
 			path = Sample;
 			sourceTree = "<group>";
 		};
+		03A049CD300FFA1A006C9C95 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				03A049CC300FFA1A006C9C95 /* HABButtonStyleDemoView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		03A049CF300FFA1A006C9C95 /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				03A049CE300FFA1A006C9C95 /* HABTextFieldDemoView.swift */,
+			);
+			path = Inputs;
+			sourceTree = "<group>";
+		};
+		03A049D2300FFA1A006C9C95 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				03A049CD300FFA1A006C9C95 /* Buttons */,
+				03A049CF300FFA1A006C9C95 /* Inputs */,
+				03A049D0300FFA1A006C9C95 /* HABSwiftUICatalogView.swift */,
+				03A049D1300FFA1A006C9C95 /* SwiftUIPlaceholderView.swift */,
+				03A049D830103D89006C9C95 /* HABSwiftUIThemeSwitcherView.swift */,
+				03A049DA3010457F006C9C95 /* ThemeSwitcherToolbarModifier.swift */,
+				03A049DC30104747006C9C95 /* HABThemeObserver.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		03D541532FF359B300BB2C51 = {
 			isa = PBXGroup;
 			children = (
-				03E172B32FF40033007958BF /* .swiftlint.yml */,
-				03D5415F2FF359B300BB2C51 /* Sources/HABUIKit */,
 				0341BE562FF8A7CA00EB1F77 /* Frameworks */,
 				03D5415E2FF359B300BB2C51 /* Products */,
 				0374D8DD3009DE6100658327 /* Sample */,
+				03A049CB300FF06B006C9C95 /* SwiftlintRules.yml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -323,6 +356,7 @@
 				03D541D52FF35CC600BB2C51 /* Frameworks */,
 				03D541D62FF35CC600BB2C51 /* Resources */,
 				0341BE5B2FF8A7CA00EB1F77 /* Embed Frameworks */,
+				03A049CA300FEF08006C9C95 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -452,11 +486,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03A049CA300FEF08006C9C95 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f /opt/homebrew/bin/swiftlint ]; then\n    /opt/homebrew/bin/swiftlint --config \"${SRCROOT}/SwiftlintRules.yml\" \"${SRCROOT}/Sources\"\nelif [ -f /usr/local/bin/swiftlint ]; then\n    /usr/local/bin/swiftlint --config \"${SRCROOT}/SwiftlintRules.yml\" \"${SRCROOT}/Sources\"\nelse\n    echo \"warning: SwiftLint not installed, download via Homebrew: brew install swiftlint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		03D541D42FF35CC600BB2C51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A049D7300FFA64006C9C95 /* SwiftUIPlaceholderView.swift in Sources */,
 				0374D8DE3009DE6100658327 /* HABBadgeDemoViewController.swift in Sources */,
 				0374D8DF3009DE6100658327 /* HABEmptyStateDemoViewController.swift in Sources */,
 				0374D8E03009DE6100658327 /* ComponentDemoViewController.swift in Sources */,
@@ -467,9 +524,11 @@
 				0374D8E53009DE6100658327 /* FeedbackViewController.swift in Sources */,
 				0374D8E63009DE6100658327 /* AppDelegate.swift in Sources */,
 				0374D8E73009DE6100658327 /* HABTagDemoViewController.swift in Sources */,
+				03A049D930103D89006C9C95 /* HABSwiftUIThemeSwitcherView.swift in Sources */,
 				0374D8E83009DE6100658327 /* HABLabelDemoViewController.swift in Sources */,
 				0374D8E93009DE6100658327 /* HABLoadingViewDemoViewController.swift in Sources */,
 				0374D8EA3009DE6100658327 /* ContainersViewController.swift in Sources */,
+				03A049DB3010457F006C9C95 /* ThemeSwitcherToolbarModifier.swift in Sources */,
 				0374D8EB3009DE6100658327 /* InputsViewController.swift in Sources */,
 				0374D8EC3009DE6100658327 /* HABSegmentedControlDemoViewController.swift in Sources */,
 				0374D8ED3009DE6100658327 /* HABDividerDemoViewController.swift in Sources */,
@@ -482,9 +541,12 @@
 				0374D8F43009DE6100658327 /* SampleNavigationController.swift in Sources */,
 				0374D8F53009DE6100658327 /* SceneDelegate.swift in Sources */,
 				0374D8F63009DE6100658327 /* HABCardDemoViewController.swift in Sources */,
-				0374D9013009E1C700658327 /* SwiftUIPlaceholderView.swift in Sources */,
+				03A049D3300FFA1A006C9C95 /* HABButtonStyleDemoView.swift in Sources */,
+				03A049D4300FFA1A006C9C95 /* HABSwiftUICatalogView.swift in Sources */,
+				03A049D5300FFA1A006C9C95 /* HABTextFieldDemoView.swift in Sources */,
 				0374D8F73009DE6100658327 /* HABAvatarDemoViewController.swift in Sources */,
 				0374D8F83009DE6100658327 /* HABButtonDemoViewController.swift in Sources */,
+				03A049DD30104747006C9C95 /* HABThemeObserver.swift in Sources */,
 				0374D8F93009DE6100658327 /* SelectionViewController.swift in Sources */,
 				0374D8FA3009DE6100658327 /* HABToastDemoViewController.swift in Sources */,
 				0374D8FB3009DE6100658327 /* ThemeSwitcherViewController.swift in Sources */,
@@ -670,6 +732,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9366E92J33;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sample/HABDesignSystemSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -704,6 +767,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9366E92J33;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sample/HABDesignSystemSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
