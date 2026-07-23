@@ -13,12 +13,10 @@ import HABFoundation
 /// Access this via the `swiftUIColors` property on any `HABTheme`:
 ///
 /// ```swift
-/// @Environment(\.habTheme) var theme
+/// let colors = HABThemeManager.shared.theme.swiftUIColors
 ///
-/// var body: some View {
-///     Text("Hello")
-///         .foregroundStyle(theme.swiftUIColors.primary)
-/// }
+/// Text("Hello").foregroundStyle(colors.foreground)
+/// Rectangle().fill(colors.primary)
 /// ```
 public struct HABSwiftUIColors {
     // MARK: - Brand
@@ -147,20 +145,11 @@ public struct HABSwiftUIColors {
 public extension HABTheme {
     /// SwiftUI-native color tokens for this theme.
     ///
-    /// Use this property to access color tokens in SwiftUI views:
-    ///
     /// ```swift
-    /// @Environment(\.habTheme) var theme
+    /// let colors = HABThemeManager.shared.theme.swiftUIColors
     ///
-    /// var body: some View {
-    ///     VStack {
-    ///         Text("Title")
-    ///             .foregroundStyle(theme.swiftUIColors.foreground)
-    ///         Text("Subtitle")
-    ///             .foregroundStyle(theme.swiftUIColors.foregroundSecondary)
-    ///     }
-    ///     .background(theme.swiftUIColors.background)
-    /// }
+    /// Text("Title").foregroundStyle(colors.foreground)
+    /// Text("Subtitle").foregroundStyle(colors.foregroundSecondary)
     /// ```
     var swiftUIColors: HABSwiftUIColors {
         HABSwiftUIColors(tokens: colors)
